@@ -7,12 +7,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Icon from 'react-native-vector-icons/Ionicons'
 
 const Stack = createStackNavigator()
-const Tab = createBottomTabNavigator()
+const BottomTab = createBottomTabNavigator()
 
 function MyTabs() {
   return (
-    <Tab.Navigator>
-      <Tab.Screen
+    <BottomTab.Navigator>
+      <BottomTab.Screen
         name="Home"
         component={Home}
         options={{
@@ -21,7 +21,7 @@ function MyTabs() {
           }
         }}
       />
-      <Tab.Screen
+      <BottomTab.Screen
         name="Profile"
         component={Profile}
         options={{
@@ -30,7 +30,7 @@ function MyTabs() {
           }
         }}
       />
-    </Tab.Navigator>
+    </BottomTab.Navigator>
   )
 }
 
